@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="CRIP Automation Script">
+
+
+
+        <test name="com.SauceDemo Tests">
+
+            <parameter name="useCloudEnv" value="false"></parameter>
+            <parameter name="envName" value="browserstack"></parameter>
+            <parameter name="os" value="windows"></parameter>
+            <parameter name="osVersion" value="11"></parameter>
+            <parameter name="browserName" value="chrome"/>
+            <parameter name="browserVersion" value="103"/>
+            <parameter name="url" value="http://saucedemo.com/"/>
+
+            <classes>
+                <class name="saucedemotests.AddItemsToCart"></class>
+                <class name="saucedemotests.CheckOut"></class>
+                <class name="saucedemotests.HyperLink"></class>
+                <class name="saucedemotests.DropDown"></class>
+                <class name="saucedemotests.HoverOver"></class>
+                <class name="saucedemotests.Icons"></class>
+                <class name="saucedemotests.Login"></class>
+                <class name="saucedemotests.MenuBar"></class>
+                <class name="saucedemotests.ResetAddToCart"></class>
+                <class name="saucedemotests.SearchBar"></class>
+            </classes>
+
+        </test>
+
+
+
+
+</suite>
